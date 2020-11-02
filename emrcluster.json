@@ -29,7 +29,7 @@
     },
     "SubnetID": {
       "Description": "Must be Valid public subnet ID",
-      "Default": "subnet-010e63e5b7db30dcb",
+      "Default": "subnet-09a8573c10e92077b",
       "Type": "String"
     },
     "LogUri": {
@@ -44,7 +44,7 @@
     },
     "ReleaseLabel": {
       "Description": "Must be a valid EMR release  version",
-      "Default": "emr-5.30.1",
+      "Default": "emr-5.31.0",
       "Type": "String"
     },
     "Applications": {
