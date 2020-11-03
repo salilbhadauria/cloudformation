@@ -1,5 +1,5 @@
 {
-   "AWSTemplateFormatVersion": "2020-11-02",
+   "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Amazon VPC",
    "Parameters": {
       "VpcBlock": {
