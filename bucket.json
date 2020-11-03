@@ -1,0 +1,35 @@
+"Resources" : {
+"S3Bucket" : {
+"Type" : "AWS::S3::Bucket",
+"Properties" : {
+"BucketName" : "Hive-Bucket"
+}
+}
+"S3Bucket-2" : {
+"Type" : "AWS::S3::Bucket",
+"Properties" : {
+"BucketName" : "DDL-Bucket"
+}
+}
+"S3Bucket-3" : {
+"Type" : "AWS::S3::Bucket",
+"Properties" : {
+"BucketName" : "EMR-Logs-Bucket"
+}
+}
+"S3Bucket-4" : {
+"Type" : "AWS::S3::Bucket",
+"Properties" : {
+"BucketName" : "Valid-scripts-Bucket"
+}
+}
+"S3Bucket-5" : {
+"Type" : "AWS::S3::Bucket",
+"Properties" : {
+"BucketName" : "Invalid-Scripts-Bucket"
+}
+}
+}
+
+
+
