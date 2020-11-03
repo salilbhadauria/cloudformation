@@ -29,7 +29,7 @@
     },
     "SubnetID": {
       "Description": "Must be Valid public subnet ID",
-      "Default": "subnet-09a8573c10e92077b",
+      "Default": "subnet-0619c83abc329469c",
       "Type": "String"
     },
     "LogUri": {
