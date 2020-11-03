@@ -111,80 +111,8 @@
       ],
       "Type": "AWS::EMR::Cluster",
       "Properties": {
-        "Applications": [
-          {
-            "Name": "Ganglia"
-          },
-          {
-            "Fn::If": [
-              "Spark",
-              {
-                "Name": "Spark"
-              },
-              {
-                "Ref": "AWS::NoValue"
-              }
-            ]
-          },
-          {
-            "Fn::If": [
-              "Hbase",
-              {
-                "Name": "Hbase"
-              },
-              {
-                "Ref": "AWS::NoValue"
-              }
-            ]
-          },
-      {
-            "Fn::If": [
-              "Hive",
-              {
-                "Name": "Hive"
-              },
-              {
-                "Ref": "AWS::NoValue"
-              }
-            ]
-          },
-      {
-            "Fn::If": [
-              "Livy",
-              {
-                "Name": "Livy"
-              },
-              {
-                "Ref": "AWS::NoValue"
-              }
-            ]
-          },
-          {
-            "Fn::If": [
-              "ZooKeeper",
-              {
-                "Name": "ZooKeeper"
-              },
-              {
-                "Ref": "AWS::NoValue"
-              }
-            ]
-          }
-    ],
-        "Configurations": [
-          {
-            "Classification": "hbase-site",
-            "ConfigurationProperties": {
-              "hbase.rootdir":{"Ref":"S3DataUri"}
-            }
-          },
-          {
-            "Classification": "hbase",
-            "ConfigurationProperties": {
-              "hbase.emr.storageMode": "s3"
-            }
-          }
-        ],
+        
+       
         "Instances": {
           "Ec2KeyName": {
             "Ref": "KeyName"
