@@ -5,7 +5,7 @@
     "EMRClusterName": {
       "Description": "Name of the cluster",
       "Type": "String",
-      "Default": "emrcluster34"
+      "Default": "emrcluster35"
     },
     "KeyName": {
       "Description": "Must be an existing Keyname",
@@ -47,61 +47,7 @@
       "Default": "emr-5.31.0",
       "Type": "String"
     },
-    "Applications": {
-      "Description": "Please select which application will be installed on the cluster this would be either Ganglia and spark, or Ganglia and s3 backed Hbase",
-      "Type": "String",
-      "AllowedValues": [
-        "Spark",
-        "Hbase",
-    "Hive",
-    "Livy",
-    "ZooKeeper"
-    ]
-     }
-  },
-  "Mappings": {},
-  "Conditions": {
-    "Spark": {
-      "Fn::Equals": [
-        {
-          "Ref": "Applications"
-        },
-        "Spark"
-      ]
-    },
-    "Hbase": {
-      "Fn::Equals": [
-        {
-          "Ref": "Applications"
-        },
-        "Hbase"
-      ]
-    },
-    "Hive": {
-      "Fn::Equals": [
-        {
-          "Ref": "Applications"
-        },
-        "Hive"
-      ]
-    },
-    "Livy": {
-      "Fn::Equals": [
-        {
-          "Ref": "Applications"
-        },
-        "Livy"
-      ]
-    },
-    "ZooKeeper": {
-      "Fn::Equals": [
-        {
-          "Ref": "Applications"
-        },
-        "ZooKeeper"
-      ]
-    }
-   },
+    
   "Resources": {
     "EMRCluster": {
       "DependsOn": [
