@@ -5,7 +5,7 @@
     "EMRClusterName": {
       "Description": "Name of the cluster",
       "Type": "String",
-      "Default": "emrcluster33"
+      "Default": "emrcluster34"
     },
     "KeyName": {
       "Description": "Must be an existing Keyname",
